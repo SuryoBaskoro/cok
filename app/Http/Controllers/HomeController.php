@@ -18,20 +18,20 @@ Carbon::setLocale('id');
 class HomeController extends Controller
 {
   /**
-  * Create a new controller instance.
-  *
-  * @return void
-  */
+   * Create a new controller instance.
+   *
+   * @return void
+   */
   public function __construct()
   {
     $this->middleware('auth');
   }
 
   /**
-  * Show the application dashboard.
-  *
-  * @return \Illuminate\Http\Response
-  */
+   * Show the application dashboard.
+   *
+   * @return \Illuminate\Http\Response
+   */
   public function index()
   {
     $siswas = User::where('status', 'S')->count();
@@ -56,6 +56,6 @@ class HomeController extends Controller
 
   public function activity()
   {
-    return view('errors.404');
+    return view('activity');
   }
 }
