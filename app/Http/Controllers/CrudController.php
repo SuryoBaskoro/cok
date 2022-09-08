@@ -353,7 +353,7 @@ class CrudController extends Controller
             $query->jk = $value['jenis_kelamin'];
             $query->status = 'S';
             $query->status_sekolah = 'Y';
-            $query->email = trim(strtolower($value['no_induk'])) . '@ayosinau.com';
+            $query->email = trim(strtolower($value['no_induk'])) . '@smkn3sby.com';
             $query->password = bcrypt(123456);
             if ($query->save()) {
               $sukses = $sukses + 1;
@@ -393,7 +393,7 @@ class CrudController extends Controller
       //     $query->jk = $value->jenis_kelamin;
       //     $query->status = 'S';
       //     $query->status_sekolah = 'Y';
-      //     $query->email = trim(strtolower($value->no_induk)) . '@ayosinau.com';
+      //     $query->email = trim(strtolower($value->no_induk)) . '@smkn3sby.com';
       //     $query->password = bcrypt(123456);
       //     if ($query->save()) {
       //       $sukses = $sukses + 1;

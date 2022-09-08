@@ -1,6 +1,6 @@
 <?php use Carbon\Carbon; ?>
 @extends('layouts.app')
-@section('title', 'TiXam - Aplikasi Ujian Berbasis Komputer')
+@section('title', 'SMKN 3 SURABAYA')
 @section('breadcrumb')
     <h1>Dashboard</h1>
     <ol class="breadcrumb">
